@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore, Engage, Enjoy</title>
+
+     <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+     alert("Welcome to my website!");
+
+    });
+
+   </script>
+    <style>
+        :root {
+            --dark-bg: #1a2404;
+            --deep-gray: #304c4e;
+            --muted-blue: #0c3b31;
+            --soft-white: #DADADA;
+            --dark-gray: #000000;
+            --lighter-gray: #333;
+            --accent-blue: #ffffff;
+            --accent-soft: rgba(255, 255, 255, 0.3);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--soft-white);
+        }
+        header {
+            background: var(--muted-blue);
+            color: var(--soft-white);
+            padding: 1rem;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        nav {
+            /* Sticky position added here */
+            position: sticky;
+            top: 0;
+            background: var(--dark-gray);
+            color: var(--soft-white);
+            padding: 0.5rem;
+            text-align: center;
+            z-index: 100; /* Ensure nav stays above other content */
+        }
+        nav a {
+            color: var(--accent-blue);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: var(--muted-blue);
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: var(--lighter-gray);
+            box-shadow: inset 0 0 10px var(--accent-soft);
+        }
+        section, aside {
+            flex: 1;
+            padding: 20px;
+            background: var(--deep-gray);
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 0 10px var(--accent-soft);
+        }
+        footer {
+            /* Fixed position added here */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: var(--muted-blue);
+            color: var(--soft-white);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+            z-index: 100; /* Ensure it stays on top of other content */
+        }
+        article {
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--soft-white);
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EchoElevate</h1>
+        <p>Sharing knowledge about web design, HTML5, CSS, and JavaScript</p>
+    </header>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#">Home</a>
+        <a href="About.html">About</a>
+        <a href="myworld.html">My world</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>Understanding HTML5 Semantics</h3>
+                <p>HTML5 introduced new semantic elements that help define the structure of web pages...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>CSS Flexbox: A Beginner's Guide</h3>
+                <p>Flexbox is a powerful tool for creating responsive layouts with minimal code...</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+        <aside>
+            <h2>About Me</h2>
+            <p>Hello its me Andrew!!!</p>
+            <h3>Popular Topics</h3>
+            <ul>
+                <li><a href="#">HTML & CSS Basics</a></li>
+                <li><a href="#">JavaScript Fundamentals</a></li>
+                <li><a href="#">Responsive Web Design</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        &copy; 2024 My Blog. All rights reserved.
+    </footer>
+</body>
+</html>
